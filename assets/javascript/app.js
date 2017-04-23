@@ -1,4 +1,3 @@
-
 var right = 0;
 var wrong = 0;
 var unanswered = 10;
@@ -63,9 +62,11 @@ if(shortTermThis === "false") {
 	if(value === "correct") {
 		right++;
 		unanswered--;
+		$(this).css("background-color", "green");
 	} else  {
 		wrong++;
 		unanswered--;
+		$(this).css("background-color", "red");
 	}
 	$("#correctCount").html(right);
 	$("#incorrectCount").html(wrong);
@@ -81,4 +82,3 @@ if(shortTermThis === "false") {
 
 
 });
-
