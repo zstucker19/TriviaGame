@@ -2,7 +2,7 @@
 var right = 0;
 var wrong = 0;
 var unanswered = 10;
-var timeLeft = 3;
+var timeLeft = 120;
 var intervalId;
 
 
@@ -28,7 +28,7 @@ function decrement() {
 
 
 function end() {
-	$("body").html("<h1 text-center> Correct: " + right + 
+	$("body").html("<h1> Correct: " + right + 
 		"<br> <h1> Incorrect: " + wrong +
 		"<br> <h1>Unanswered: " + unanswered + 
 		"<br><button id='resetbtn' type='button' class='btn btn-default'>Reset</button>"
